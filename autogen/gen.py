@@ -56,6 +56,7 @@ def generate_function(line):
     assert rust_name.startswith('gui_')
     rust_name = rust_name[4:]
 
+    p('#[inline]\n')
     p('pub fn ')
     p(rust_name)
     p('(')
