@@ -1,0 +1,6 @@
+# I don't know how to generate those, so I do these by hand
+
+GuiTextBox|bounds: Rectangle, text: *mut ::std::os::raw::c_char, textSize: i32, editMode: bool|bool
+GuiTextBoxMulti|bounds: Rectangle, text: *mut ::std::os::raw::c_char, textSize: i32, editMode: bool|bool
+GuiListViewEx|bounds: Rectangle, text: *mut *mut ::std::os::raw::c_char, count: i32, enabled: *mut i32, active: *mut i32, focus: *mut i32, scrollIndex: *mut i32, editMode: bool|bool
+GuiLoadStyleProps|props: *const i32, count: i32|

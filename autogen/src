@@ -1,0 +1,45 @@
+GuiEnable||
+GuiDisable||
+GuiLock||
+GuiUnlock||
+GuiState|state: i32|
+GuiTextAlign|align: i32|
+GuiFont|font: Font|
+GuiFade|alpha: f32|
+GuiSetStyle|control: i32, property: i32, value: i32|
+GuiGetStyle|control: i32, property: i32|i32
+GuiWindowBox|bounds: Rectangle, text: c_str|bool
+GuiGroupBox|bounds: Rectangle, text: c_str|
+GuiLine|bounds: Rectangle, thick: i32|
+GuiPanel|bounds: Rectangle|
+GuiScrollPanel|bounds: Rectangle, content: Rectangle, viewScroll: Vector2|Vector2
+GuiLabel|bounds: Rectangle, text: c_str|
+GuiButton|bounds: Rectangle, text: c_str|bool
+GuiLabelButton|bounds: Rectangle, text: c_str|bool
+GuiImageButton|bounds: Rectangle, texture: Texture2D|bool
+GuiImageButtonEx|bounds: Rectangle, texture: Texture2D, texSource: Rectangle, text: c_str|bool
+GuiToggle|bounds: Rectangle, text: c_str, active: bool|bool
+GuiToggleGroup|bounds: Rectangle, text: c_str, active: i32|i32
+GuiToggleGroupEx|bounds: Rectangle, text: c_str, active: i32, padding: i32, columns: i32|i32
+GuiCheckBox|bounds: Rectangle, text: c_str, checked: bool|bool
+GuiComboBox|bounds: Rectangle, text: c_str, active: i32|i32
+GuiSlider|bounds: Rectangle, text: c_str, value: f32, minValue: f32, maxValue: f32, showValue: bool|f32
+GuiSliderBar|bounds: Rectangle, text: c_str, value: f32, minValue: f32, maxValue: f32, showValue: bool|f32
+GuiProgressBar|bounds: Rectangle, text: c_str, value: f32, minValue: f32, maxValue: f32, showValue: bool|f32
+GuiStatusBar|bounds: Rectangle, text: c_str, offsetX: i32|
+GuiDummyRec|bounds: Rectangle, text: c_str|
+GuiScrollBar|bounds: Rectangle, value: i32, minValue: i32, maxValue: i32|i32
+GuiColorPicker|bounds: Rectangle, color: Color|Color
+GuiMessageBox|bounds: Rectangle, windowTitle: c_str, message: c_str|bool
+GuiGrid|bounds: Rectangle, spacing: f32, subdivs: i32|Vector2
+GuiLoadStyle|fileName: c_str|
+GuiLoadStyleDefault||
+GuiUpdateStyleComplete||
+GuiSliderPro|bounds: Rectangle, text: c_str, value: f32, minValue: f32, maxValue: f32, sliderWidth: i32, showValue: bool|f32
+GuiColorPanel|bounds: Rectangle, color: Color|Color
+GuiColorBarAlpha|bounds: Rectangle, alpha: f32|f32
+GuiColorBarHue|bounds: Rectangle, hue: f32|f32
+GuiDropdownBox|bounds: Rectangle, text: c_str, active: *mut i32, editMode: bool|bool
+GuiSpinner|bounds: Rectangle, value: *mut i32, minValue: i32, maxValue: i32, btnWidth: i32, editMode: bool|bool
+GuiValueBox|bounds: Rectangle, value: *mut i32, minValue: i32, maxValue: i32, editMode: bool|bool
+GuiListView|bounds: Rectangle, text: c_str, active: *mut i32, scrollIndex: *mut i32, editMode: bool|bool
