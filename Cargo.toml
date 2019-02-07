@@ -1,0 +1,6 @@
+[package]
+name = "raygui"
+version = "0.1.0"
+
+[dependencies]
+raygui-sys = { path = "./sys" }

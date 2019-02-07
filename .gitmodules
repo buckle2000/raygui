@@ -1,0 +1,3 @@
+[submodule "sys/raygui"]
+	path = sys/raygui
+	url = https://github.com/raysan5/raygui
